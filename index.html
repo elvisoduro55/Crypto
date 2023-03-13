@@ -21,15 +21,19 @@
            <a href=""><img src="images/Logo.png" alt="logo" width="48px" height="48px"></a> 
 
 
-            <ul>
+            <ul class="menu">
                 <li><a href="">About</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Login</a></li>
 
-                <button type="button">Start free trial</button>
+                <button type="button" class="nav-btn">Start free trial</button>
                 
             </ul>
+
+            <div class="hamburger">
+            <img src="images/menu.png" width="40px"/>
+            </div>
 
             </nav>
 
@@ -228,7 +232,7 @@
 
         <div class="col-2">
     
-            <h3>See why the worlds best <br>
+            <h3 class="why-qubly">See why the worlds best <br>
                 companies use Qubly to <br>
                  become truly data-driven.</h3>
     
@@ -273,9 +277,127 @@
       <!--sign up form section close-->
 
 
+     <!--footer start-->
+      <footer>
+
+        <div class="col-6">
+
+            <img src="images/Logo.png" width="40px" alt="logo">
+            <p class="footer-info">Lorem ipsum dolor sit amet,<br>
+                  adipiscing elit, sed diam<br>
+                uismod  ut laoreet dolore<br>
+                 erat volutpat ut wisi enim</p>
+                 <img src="images/facebook-icon.png" width="20px">
+                 <img src="images/instagram-2016.png" width="20px">
+                 <img src="images/twitter-3.png" width="20px">
+
+        </div>
+
+        <div class="col-6">
+
+            <h4>Product</h4>
+
+            <ul>
+                <Li>Connections</Li>
+                <Li>Protocols</Li>
+                <Li>Personas</Li>
+                <Li>Integrations</Li>
+                <Li>Catalog</Li>
+                <Li>Picing</Li>
+                <Li>Security</Li>
+                
+
+            </ul>
+
+        </div>
+
+        <div class="col-6">
+
+            
+            <h4>For Developers</h4>
+
+            <ul>
+                <Li>Docs</Li>
+                <Li>Api</Li>
+                <Li>Open source</Li>
+                <Li>Team</Li>
+
+            </ul>
+
+        </div>
+
+        <div class="col-6">
+
+            <h4>Company</h4>
+
+            <ul>
+                <Li>Careers</Li>
+                <Li>Blog</Li>
+                <Li>Press</Li>
+            
+            </ul>
+
+        </div>
+
+        <div class="col-6">
+
+            
+            <h4>Support</h4>
+
+            <ul>
+                <Li>Help center</Li>
+                <Li>Contact Us</Li>
+                <Li>Security</Li>
+                <Li>Documentation</Li>
+                <Li>Portal</Li>
+                <Li>Partner</Li>
+                <Li>Bulletins</Li>
+                
+
+            </ul>
+
+        </div>
+
+        <div class="col-6">
+
+            <h4>Newsletter</h4>
+
+            <input type="email" id="email" placeholder="Email" ><br>
+            <input type="button" name="Send" value="Send" >
+        
+
+        </div>
+
+   
+
+
+
+      </footer>
+      
+     <!--footer close-->
+
+     <div class="Developer">Elvis Oduro 2023</div>
+
 </body>
 
+<!--javascript for toggle start-->
+<script>
 
+    const openn = document.querySelector(".hamburger");
+          const menu = document.querySelector(".menu");
+          openn.addEventListener("click", () => {
+            menu.style.display === "none"
+              ? (menu.style.display = "block")(
+                  openn.setAttribute( ".hamburger")
+                )
+              : (menu.style.display = "none")(
+                openn.setAttribute( src="https://kit.fontawesome.com/7e91622aa6.js" , ".fa-close")
+                );
+          });
+    
+    
+    </script>
+    <!--javascript for toggle end-->
 
 
 </html>

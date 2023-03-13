@@ -122,6 +122,8 @@ main {
     padding: 2.5rem;
     margin-bottom: 5rem;
     background-color: #FFFFFF;
+    max-width: 100%;
+    height: 100%;
 }
 
 h2 {
@@ -180,7 +182,7 @@ h4 {
         justify-content: space-around;
         align-items: center;
         padding: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
         gap: 1rem;
         background-color: #FFFFFF;
         max-width: 100%;
@@ -216,7 +218,7 @@ h4 {
 
 input[type=text] {
     width: 100%;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
     margin: 0.5rem 0;
     display: inline-block;
     border: 1px solid #D9D9D9;
@@ -227,7 +229,7 @@ input[type=text] {
   
 input[type=password] {
     width: 100%;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
     margin: 0.5rem 0;
     display: inline-block;
     border: 1px solid #D9D9D9;
@@ -249,7 +251,92 @@ input[type=password] {
     font-size: 4rem;
     color: brown;
   }
+
+  .why-qubly {
+    font-size: 1.6rem;
+  }
+
+  footer {
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    height: 100%;
+    max-width: 100%;
+  }
   
+  input[type=email] {
+    width: 100%;
+    padding: 1rem 2rem;
+    color: #8989A2;
+    display: inline-block;
+    border: 2px solid #ffffffd5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 5px 9px rgba(5, 4, 4, 0.084));
+    margin-bottom: 2rem;
+
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+
+  .col-6 ul li{
+    list-style-type: none;
+    color: black;
+    font-weight: 500;
+    color: #160637;
+    line-height: 2rem;
+
+  }
+
+  .col-6 ul li:hover{
+    cursor: pointer;
+    color: #722ED1;
+  }
+
+  .footer-info {
+    line-height: 2rem;
+    font-weight: 500;
+
+  }
+
+  input[type=button] {
+    
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    background-color: #722ED1;
+    color: #FFFFFF;
+    display: inline-block;
+    border: 1px solid #722ED1;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+  }
+
+  input[type=button]:hover {
+    opacity: 0.5;
+    cursor: pointer;
+
+  }
+
+  .Developer {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000a1;
+  }
+  
+  .hamburger {
+    display: none;
+  
+} 
+
 
 @media only screen and (max-width: 586px)
  {
@@ -290,4 +377,39 @@ input[type=password] {
     max-width: 100%;
     height: 100%;
   }
+
+  footer {
+    flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav ul{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    background: #722ed1d5;
+    padding: 2rem;
+
+ }
+
+ nav ul li a {
+    color: hsla(0, 0%, 100%, 0.988);
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+   
+  }
+  .nav-btn {
+   margin-top: 2rem;
+  }
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+}
+
 } 
